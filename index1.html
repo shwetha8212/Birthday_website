@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday My Pattu ❤️</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<!-- PASSWORD SCREEN -->
+<div id="passwordScreen" class="centerScreen fade">
+    <h1>To the man my heart choose as its forever home 💕</h1>
+    <p>Only the name you whisper with love can unlock this world.</p>
+    <input type="password" id="passwordInput" placeholder="The name you call me with love...">
+    <button onclick="checkPassword()">Unlock ❤️</button>
+    <p id="errorMsg"></p>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="mainContent" style="display:none;" class="fade">
+
+<section class="section landing">
+    <h1>Happy Birthday to My Forever, Anand 💖</h1>
+    <h3>April 5, 2026</h3>
+    <p class="subtext">
+        Today, I celebrate your birthday…  
+    	my Anand, my pattu 💕  
+    	even from miles away, my love reaches you.  
+    	And somewhere deep in my heart,  
+    	I’m counting every single day —  
+    	until I can call you mine forever,  
+    	my husband… my purusha 💖
+    </p>
+    <h2 id="countdown"></h2>
+</section>
+
+<!-- SLIDESHOW -->
+<section class="section">
+    <h2>From Miles Apart… To Forever Together 💍💖</h2>
+    <h2>The Journey That Made Us… Us 💖...From Strangers to Forever 💍....
+        Every Moment With You Is My Favorite 💕....From Miles Apart… To Heart to Heart 💖..Our Love Story Unfolds… 🎬💖..All the Moments That Made Me Fall For You 💕</h2>
+    
+</section>
+
+<button onclick="playMusic()">🎵 Play Our Song</button>
+
+<!-- 🌍 LONG DISTANCE -->
+<section class="section">
+    <h2>Long Distance… But Always Close 💕</h2>
+    <p>
+        Even when miles separated us…  
+        you never let me feel alone.  
+        Every call, every message, every “Chellam”…  
+        made my heart feel at home 💖
+    </p>
+    <div class="gallery">
+        <img src="photos/LDI_1.jpg">
+        <img src="photos/LDI_2.jpg">
+<img src="photos/LDI_3.jpg">
+<img src="photos/LDI_4.jpg">
+<img src="photos/LDI_5.jpg">
+<img src="photos/LDI_6.jpg">
+<img src="photos/LDI_7.jpg">
+<img src="photos/LDI_8.jpg">
+<img src="photos/LDI_9.jpg">
+<img src="photos/LDI_10.jpg">
+<img src="photos/LDI_11.jpg">
+<img src="photos/LDI_12.jpg">
+    </div>
+</section>
+
+<!-- 🤝 FIRST MEET -->
+<section class="section">
+    <h2>First Meet ✨🥰❤️</h2>
+    <p>
+        The moment I saw you…  
+        everything felt right.  
+        Like my heart already knew you.
+    </p>
+
+    <div class="gallery">
+        <img src="photos/FM1.jpg">
+        <img src="photos/FM2.jpg">
+<img src="photos/FM3.jpg">
+    </div>
+</section>
+
+<!-- 💕 FIRST DATE -->
+<section class="section">
+    <h2>Our First Date ✨❤️</h2>
+    <p>
+        Nervous smiles… shy talks…  
+        and a heart slowly falling for you 💖
+    </p>
+
+    <div class="gallery">
+        <img src="photos/FD1.jpg">
+        <img src="photos/FD2.jpg">
+<img src="photos/FD3.jpg">
+        <img src="photos/FD4.jpg">
+<img src="photos/FD5.jpg">
+        <img src="photos/FD6.jpg">
+<img src="photos/FD7.jpg">
+    </div>
+</section>
+
+
+<section class="section">
+    <h2>Movie Date ❤️🎥</h2>
+    <p>
+        Sitting beside you…  
+        but honestly, I was only watching you 😌💕
+    </p>
+
+    <div class="gallery">
+        <img src="photos/MOVIE1.jpg">
+        <img src="photos/MOVIE2.jpg">
+    </div>
+</section>
+
+<section class="section">
+    <h2>Temple Date 🛕✨</h2>
+    <p>
+        Standing beside you…  
+        praying for a lifetime together 💍
+    </p>
+
+    <div class="gallery">
+      
+<img src="photos/TM3.jpg">
+<img src="photos/TM4.jpg">
+<img src="photos/TM5.jpg">
+<img src="photos/TM6.jpg">
+<img src="photos/TM7.jpg">
+<img src="photos/TM8.jpg">
+<img src="photos/TM9.jpg">
+    </div>
+</section>
+
+<section class="section">
+    <h2>Little Moments That Meant Everything 💕</h2>
+    <p>
+        Shopping, rides, random laughs…  
+        with you, everything felt magical 💖
+    </p>
+
+    <div class="gallery">
+        <img src="photos/MOM1.jpg">
+<img src="photos/MOM2.jpg">
+<img src="photos/MOM3.jpg">
+
+<img src="photos/MOM5.jpg">
+<img src="photos/MOM6.jpg">
+<img src="photos/MOM7.jpg">
+<img src="photos/MOM8.jpg">
+<img src="photos/MOM9.jpg">
+<img src="photos/MOM10.jpg">
+<img src="photos/MOM11.jpg">
+<img src="photos/MOM12.jpg">
+<img src="photos/MOM13.jpg">
+    </div>
+</section>
+
+<!-- 💍 ENGAGEMENT -->
+<section class="section">
+    <h2>Our Engagement 💍❤️</h2>
+    <p>
+        February 4, 2026…  
+        the day I became yours…  
+        the day my forever got your name 💖
+    </p>
+
+    <div class="gallery">
+        <img src="photos/ENG1.jpg">
+        <img src="photos/ENG2.jpg">
+<img src="photos/ENG3.jpg">
+<img src="photos/ENG4.jpg">
+<img src="photos/ENG5.jpg">
+<img src="photos/ENG6.jpg">
+    </div>
+</section>
+
+
+<!-- FLIP CARDS -->
+<section class="section">
+    <h2>Little Things That Made Me Fall For You 💖</h2>
+    <div class="cardContainer">
+
+      <div class="flipCard">
+    <div class="flipInner">
+        <div class="flipFront">When you call me “Chellam” 💕</div>
+        <div class="flipBack">My whole world becomes soft.</div>
+    </div>
+</div>
+
+<div class="flipCard">
+    <div class="flipInner">
+        <div class="flipFront">The way you look at me 😌</div>
+        <div class="flipBack">Like I’m already your wife.</div>
+    </div>
+</div>
+
+<div class="flipCard">
+    <div class="flipInner">
+        <div class="flipFront">Even in distance 🌍</div>
+        <div class="flipBack">You never let me feel alone.</div>
+    </div>
+</div>
+
+<div class="flipCard">
+    <div class="flipInner">
+        <div class="flipFront">February 4 💍</div>
+        <div class="flipBack">The day I became yours.</div>
+    </div>
+</div>
+
+<div class="flipCard">
+    <div class="flipInner">
+        <div class="flipFront">June 4 loading… 💖</div>
+        <div class="flipBack">The day I become your wife.</div>
+    </div>
+</div>
+
+    </div>
+</section>
+
+<!-- TYPEWRITER LETTER -->
+<section class="section letterSection">
+    <h2>A Letter To My Future Husband 💌</h2>
+    <p id="typewriter"></p>
+</section>
+
+<section class="section">
+    <button onclick="celebrate()">Click For Birthday Magic 🎉</button>
+</section>
+
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="song1.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+/* PASSWORD */
+const correctPasswords = ["Chellam","Chella Kutty","Thangam","Laddu"];
+
+function checkPassword(){
+    let input=document.getElementById("passwordInput").value;
+    if(passwords.includes(input)){
+        document.getElementById("passwordScreen").style.display="none";
+        document.getElementById("mainContent").style.display="block";
+
+        let music = document.getElementById("bgMusic");
+
+        music.volume = 0.5;
+
+        // THIS IS CRITICAL
+        music.play().catch(() => {
+            console.log("Autoplay blocked");
+        });
+
+    }else{
+        document.getElementById("errorMsg").innerText="Try again 😜";
+    }
+}
+
+function playMusic(){
+    let music = document.getElementById("bgMusic");
+    music.play();
+}
+
+/* COUNTDOWN */
+const weddingDate = new Date("June 4, 2026");
+setInterval(()=>{
+    const now = new Date();
+    const diff = weddingDate - now;
+    const days = Math.floor(diff/(1000*60*60*24));
+    document.getElementById("countdown").innerText =
+        days + " days left until I officially call you my husband… my purusha 💖";
+},1000);
+
+/* CONFETTI */
+function celebrate(){
+    confetti({
+        particleCount:300,
+        spread:150
+    });
+}
+
+/* FLOATING HEARTS */
+setInterval(()=>{
+    const heart=document.createElement("div");
+    heart.classList.add("heart");
+    heart.style.left=Math.random()*100+"vw";
+    document.body.appendChild(heart);
+    setTimeout(()=>heart.remove(),5000);
+},400);
+
+/* SLIDESHOW */
+let slides=document.querySelectorAll(".slide");
+let index=0;
+setInterval(()=>{
+    slides[index].classList.remove("active");
+    index=(index+1)%slides.length;
+    slides[index].classList.add("active");
+},3000);
+
+/* TYPEWRITER LETTER */
+const text=`Anand...
+
+From October 3, 2025 till today,
+you became my safest place.
+
+Long distance never reduced our love.
+February 4, 2026 —
+the day we got engaged —
+is the day I knew my forever had a name.
+
+This birthday may be miles apart,
+but my heart is already walking
+towards June 4, 2026 —
+the day you make me yours permanently.
+
+I am waiting for you.
+I am proud of you.
+I am yours.
+
+Always,
+Your Chellam ❤️`;
+
+let i=0;
+function typeWriter(){
+    if(i<text.length){
+        document.getElementById("typewriter").innerHTML+=text.charAt(i);
+        i++;
+        setTimeout(typeWriter,40);
+    }
+}
+typeWriter();
+
+/* PARTICLES */
+tsParticles.load("particles-js",{
+    particles:{
+        number:{value:70},
+        color:{value:"#ff4d6d"},
+        shape:{type:"circle"},
+        opacity:{value:0.5},
+        size:{value:3},
+        move:{enable:true,speed:1}
+    }
+});
+
+</script>
+
+</body>
+</html>
